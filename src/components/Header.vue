@@ -86,4 +86,9 @@ export default {
   border: none;
   border-radius: 5px;
 }
+
+.nav-menu .router-link-active {
+  text-decoration: underline;
+  font-weight: bold;
+}
 </style>

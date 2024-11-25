@@ -57,4 +57,15 @@ export default {
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
+.category-btn:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .category-section {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
