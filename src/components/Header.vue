@@ -6,9 +6,15 @@
     <nav class="nav-menu" aria-label="Navigation principale">
       <ul>
         <li><router-link to="/">Accueil</router-link></li>
+        <li><router-link to="/administration">Administration</router-link></li>
+        <li><router-link to="/reglementation">Règlementation</router-link></li>
         <li><router-link to="/inscriptions">Inscriptions</router-link></li>
-        <li><router-link to="/convocations">Convocations</router-link></li>
-        <li><router-link to="/resultats">Résultats</router-link></li>
+        <li><router-link to="/orga-affectation">Orga-Affectation</router-link></li>
+        <li><router-link to="/deroulement">Déroulement</router-link></li>
+        <li><router-link to="/evaluation">Évaluation</router-link></li>
+        <li><router-link to="/deliberation">Délibération</router-link></li>
+        <li><router-link to="/publication">Publication</router-link></li>
+        <li><router-link to="/documents">Documents</router-link></li>
       </ul>
     </nav>
     <div class="search-container">
