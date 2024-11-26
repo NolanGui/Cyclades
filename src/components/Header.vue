@@ -41,7 +41,6 @@ export default {
   },
   methods: {
     handleSearch() {
-      // Logic de recherche
       console.log(`Recherche : ${this.searchTerm}`)
     },
   },
@@ -56,6 +55,8 @@ export default {
   background-color: #007bff;
   padding: 10px 20px;
   color: white;
+  width: 100%;
+  box-sizing: border-box; /* Gère le padding pour éviter tout débordement */
 }
 
 .logo-container .logo {

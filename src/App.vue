@@ -1,9 +1,13 @@
 <template>
-  <v-app>
-    <Header />
-    <router-view />
-    <Footer />
-  </v-app>
+  <div id="app">
+    <v-app>
+      <Header />
+      <main>
+        <router-view />
+      </main>
+      <Footer />
+    </v-app>
+  </div>
 </template>
 
 <script>
@@ -25,28 +29,22 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-header {
-  flex-shrink: 0;
+  max-width: 100vw;
 }
 
 main {
   flex-grow: 1;
-  padding: 20px;
   background-color: #f9f9f9;
-  overflow-y: auto;
-}
-
-/* Footer */
-footer {
-  flex-shrink: 0;
+  padding: 20px;
+  overflow: auto;
 }
 </style>
