@@ -18,7 +18,6 @@
       </ul>
     </nav>
     <div class="search-container">
-      <label for="search" class="sr-only">Rechercher</label>
       <input
         type="text"
         id="search"
@@ -27,6 +26,14 @@
         @input="handleSearch"
         aria-label="Rechercher"
       />
+      <button
+        type="button"
+        class="search-button"
+        @click="executeSearch"
+        aria-label="Lancer la recherche"
+      >
+        🔍
+      </button>
     </div>
   </header>
 </template>
@@ -56,7 +63,7 @@ export default {
   padding: 10px 20px;
   color: white;
   width: 100%;
-  box-sizing: border-box; /* Gère le padding pour éviter tout débordement */
+  box-sizing: border-box;
 }
 
 .logo-container .logo {
@@ -82,10 +89,36 @@ export default {
   text-decoration: underline;
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 5px;
+}
+
 .search-container input {
-  padding: 5px;
+  padding: 5px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-container input:focus {
+  border-color: #0056b3;
+}
+
+.search-button {
+  background-color: #0056b3;
   border: none;
   border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #004494;
 }
 
 .nav-menu .router-link-active {
@@ -93,3 +126,4 @@ export default {
   font-weight: bold;
 }
 </style>
+

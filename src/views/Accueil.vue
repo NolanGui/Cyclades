@@ -26,7 +26,7 @@
       <h2 id="features-title">Fonctionnalités principales</h2>
       <ul class="features-list">
         <li>Inscription rapide des candidats</li>
-        <li>Convocation simplifiée des surveillants</li>
+        <li>Convocation simplifiée</li>
         <li>Suivi détaillé des résultats</li>
       </ul>
     </section>
