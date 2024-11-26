@@ -39,12 +39,12 @@ export default {
           image: creerImage,
         },
         {
-          label: 'Consulter les candidatures',
+          label: 'Consulter/modifier les candidatures',
           action: 'viewCandidates',
           image: consulterImage,
         },
         {
-          label: 'Modifier une candidature',
+          label: 'Modifier les données',
           action: 'editCandidate',
           image: consulterImage,
         },
@@ -69,7 +69,7 @@ export default {
           image: gererImage,
         },
         {
-          label: 'Pré-inscrire en masse',
+          label: 'Préinscrire en masse',
           action: 'bulkPreRegister',
           image: consulterImage,
         },
@@ -93,47 +93,47 @@ export default {
 
 .category-section {
   display: flex;
-  flex-wrap: wrap; /* Permet de passer à la ligne quand il n'y a plus de place */
-  gap: 20px; /* Ajoute un espace uniforme entre les éléments */
-  justify-content: center; /* Centre les cartes horizontalement */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .category-card {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  border-radius: 10px; /* Coins arrondis */
+  border-radius: 10px;
   text-align: center;
   padding: 15px;
   background-color: #f9f9f9;
-  flex: 1 1 calc(25% - 20px); /* Définit une largeur flexible (25% moins le gap) */
-  max-width: calc(25% - 20px); /* Limite la largeur à 25% de la ligne */
-  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column; /* Utilisation de flex en colonne pour bien aligner l'image et le texte */
-  align-items: center; /* Centrer le contenu horizontalement */
-  justify-content: space-between; /* Assurer que le texte et l'image sont bien espacés */
-  height: 350px; /* Hauteur fixe pour garantir que tout le contenu est bien espacé */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
 }
 
 .category-card:hover {
-  transform: scale(1.1); /* Effet de zoom plus marqué */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Effet d'ombre plus profond */
-  border-color: #007bff; /* Change la couleur du cadre au survol (bleu vif) */
-  background-color: #eaf4ff; /* Change légèrement la couleur de fond pour un effet visuel */
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-color: #007bff;
+  background-color: #eaf4ff;
 }
 
 .category-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px; /* Hauteur plus grande pour l'image */
-  margin-bottom: 15px; /* Espace sous l'image */
+  height: 130px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 
 .category-img {
-  max-height: 100px; /* Ajuste la taille maximale de l'image */
-  max-width: 100px; /* Limite les dimensions */
+  max-height: 90px;
+  max-width: 90px;
   object-fit: contain;
 }
 
@@ -142,15 +142,15 @@ export default {
   font-weight: 600;
   color: #333;
   margin-top: 10px;
-  padding: 15px 20px; /* Ajoute du padding autour du texte pour plus d'espace */
-  border: 2px solid #e0e0e0; /* Cadre autour du texte */
-  border-radius: 5px; /* Coins arrondis pour le cadre du texte */
-  background-color: #fff; /* Fond blanc pour le texte */
-  display: inline-block; /* Assure que le texte est bien contenu dans un bloc */
-  transition: transform 0.2s ease; /* Ajoute un effet de transition au texte */
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 .category-label:hover {
-  transform: scale(1.1); /* Effet de zoom sur le texte au survol */
+  transform: scale(1.1);
 }
 </style>
