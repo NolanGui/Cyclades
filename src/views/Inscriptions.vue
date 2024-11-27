@@ -7,11 +7,15 @@
         <v-card
           class="category-card"
           outlined
+          role="button"
+          tabindex="0"
           @click="navigateTo(category.action)"
+          @keydown.enter="navigateTo(category.action)"
+          @keydown.space.prevent="navigateTo(category.action)"
           aria-label="Accéder à {{ category.label }}"
         >
           <div class="category-img-container">
-            <img :src="category.image" :alt="'Icone de ' + category.label" class="category-img" />
+            <img :src="category.image" :alt="'Icône de ' + category.label" class="category-img" />
           </div>
           <v-card-text class="text-center">
             <span class="category-label">{{ category.label }}</span>
@@ -23,11 +27,11 @@
 </template>
 
 <script>
-import creerImage from "@/assets/creer.png";
-import consulterImage from "@/assets/consulter.png";
-import gererImage from "@/assets/gerer.png";
-import importerImage from "@/assets/importer.png";
-import informerImage from "@/assets/informer.png";
+import creerImage from '@/assets/creer.png'
+import consulterImage from '@/assets/consulter.png'
+import gererImage from '@/assets/gerer.png'
+import importerImage from '@/assets/importer.png'
+import informerImage from '@/assets/informer.png'
 
 export default {
   data() {
@@ -74,14 +78,14 @@ export default {
           image: consulterImage,
         },
       ],
-    };
+    }
   },
   methods: {
     navigateTo(action) {
-      alert(`Navigating to: ${action}`);
+      alert(`Navigating to: ${action}`)
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -100,7 +104,10 @@ export default {
 
 .category-card {
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
   border-radius: 10px;
   text-align: center;
   padding: 15px;
@@ -113,13 +120,18 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 300px;
+  outline: none;
+}
+
+.category-card:focus {
+  box-shadow: 0 0 0 3px #007bff;
+  background-color: #eaf4ff;
 }
 
 .category-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   border-color: #007bff;
-  background-color: #eaf4ff;
 }
 
 .category-img-container {
