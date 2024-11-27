@@ -39,42 +39,42 @@ export default {
       categories: [
         {
           label: 'Créer une candidature',
-          action: 'createCandidate',
+          action: '/create-candidate',
           image: creerImage,
         },
         {
           label: 'Consulter/modifier les candidatures',
-          action: 'viewCandidates',
+          action: '/recherche',
           image: consulterImage,
         },
         {
           label: 'Modifier les données',
-          action: 'editCandidate',
+          action: '/edit-candidate',
           image: consulterImage,
         },
         {
           label: 'Importer des candidatures',
-          action: 'importCandidates',
+          action: '/import-candidates',
           image: importerImage,
         },
         {
           label: 'Gérer les consentements',
-          action: 'manageConsents',
+          action: '/manage-consents',
           image: informerImage,
         },
         {
           label: 'Informer les candidats',
-          action: 'notifyCandidates',
+          action: '/notify-candidates',
           image: informerImage,
         },
         {
           label: 'Changer d’académie',
-          action: 'changeAcademy',
+          action: '/change-academy',
           image: gererImage,
         },
         {
           label: 'Préinscrire en masse',
-          action: 'bulkPreRegister',
+          action: '/bulk-pre-register',
           image: consulterImage,
         },
       ],
@@ -82,7 +82,7 @@ export default {
   },
   methods: {
     navigateTo(action) {
-      alert(`Navigating to: ${action}`)
+      this.$router.push(action)
     },
   },
 }

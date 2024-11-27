@@ -40,7 +40,6 @@ export default {
 </script>
 
 <style scoped>
-/* Styles de base pour la page d'accueil */
 #homepage {
   padding: 20px;
   max-width: 1200px;
@@ -51,7 +50,6 @@ export default {
   background-color: #ffffff;
 }
 
-/* Section de bienvenue */
 .welcome-section {
   text-align: center;
   margin-bottom: 40px;
@@ -67,7 +65,6 @@ export default {
   margin-top: 10px;
 }
 
-/* Navigation */
 .navigation-links {
   list-style: none;
   padding: 0;
@@ -96,7 +93,6 @@ export default {
   outline: none;
 }
 
-/* Section fonctionnalités */
 .features-section {
   margin-top: 40px;
 }
