@@ -1,41 +1,18 @@
-# Cyclades
+Assurez-vous d'avoir les éléments suivants installés :
 
-This template should help get you started developing with Vue 3 in Vite.
+Node.js (version 16 ou supérieure recommandée)
+Si Node.js n'est pas installé, téléchargez-le sur le site de : Node.js
 
-## Recommended IDE Setup
+ensuite sur le terminal de votre éditeur de code à la racine du projet utilisez la comande suivante:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Pour finir utilisez la comande :
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Vous pouvez maintenant ctrl click sur l'addresse local et arriver sur le site
